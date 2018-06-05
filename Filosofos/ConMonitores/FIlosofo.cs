@@ -36,6 +36,7 @@ namespace Filosofos.ConMonitores
                     Thread.Sleep(_tiempoPensar);
                     Console.WriteLine(_numero + " - " + _nombre + " tiene hambre...");
                     _tenedor.Pedir(_tenedorIzq, _tenedorDer);
+                    Console.WriteLine(_numero + " - " + _nombre + " está comiendo con tenedores - " + _tenedorIzq + " - " + _tenedorDer);
                     Thread.Sleep(_tiempoComer);
                     _tenedor.Devolver(_tenedorIzq, _tenedorDer);
                     Console.WriteLine(_numero + " - " + _nombre + " se retira del comedor...");
